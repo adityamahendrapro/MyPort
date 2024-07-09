@@ -1,16 +1,23 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "portofolio.html",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/portofolio.html"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "portofolio.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "portofolio.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "img/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/portofolio.html"
+    }
+  ]
+}
